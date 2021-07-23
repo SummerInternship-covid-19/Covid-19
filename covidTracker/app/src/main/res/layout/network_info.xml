@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/bg_solid"
+
+
+    tools:ignore="MissingDefaultResource">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="40dp"
+        android:layout_height="wrap_content">
+
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+
+            app:lottie_fileName="no_network.json"
+            app:lottie_autoPlay="true"
+
+            app:lottie_repeatMode="restart"
+            app:lottie_loop="true"
+
+            >
+
+        </com.airbnb.lottie.LottieAnimationView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oops! No internet connection"
+            android:textSize="16sp"
+
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lato_regular"
+            android:layout_marginHorizontal="10dp"
+            >
+
+        </TextView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

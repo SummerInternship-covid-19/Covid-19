@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fillViewport="true"
+
+    tools:context=".Covidindia.fragIndia.CovidDetailIndia">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:isScrollContainer="true"
+
+            android:nestedScrollingEnabled="true"
+            android:scrollbars="vertical"
+            >
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="5dp"
+
+        android:id="@+id/dashboardViewCard"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:padding="5dp"
+
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:id="@+id/reldd"
+                android:layout_gravity="center"
+                >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dashboard"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+
+                    android:gravity="center"
+                    android:textColor="#6C6C6C"
+
+                    android:id="@+id/ds"
+
+                    android:fontFamily="@font/lato_bold"
+                    tools:ignore="HardcodedText">
+
+                </TextView>
+
+
+                <ProgressBar
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/dsProgress"
+                    >
+
+                </ProgressBar>
+
+
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Total Cases"
+                android:textSize="18sp"
+                android:id="@+id/totalCaseText"
+                android:layout_below="@+id/reldd"
+
+                android:padding="10dp"
+                android:fontFamily="@font/lato_black"
+
+                tools:ignore="HardcodedText">
+
+
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="000000"
+                android:textSize="18sp"
+                android:id="@+id/totalCasesInd"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/lato_black"
+                android:layout_below="@+id/reldd"
+                android:padding="10dp"
+
+                tools:ignore="HardcodedText">
+
+
+            </TextView>
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Total Confirmed case Indian"
+            android:textSize="18sp"
+            android:id="@+id/totalCaseConfText"
+            android:layout_below="@+id/totalCaseText"
+            android:padding="10dp"
+
+            android:fontFamily="@font/lato_regular"
+
+                tools:ignore="HardcodedText">
+
+
+        </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="000000"
+                android:textSize="18sp"
+                android:id="@+id/totalCaseConfirmIndian"
+                android:layout_below="@+id/totalCasesInd"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/lato_regular"
+                android:padding="10dp"
+
+                tools:ignore="HardcodedText">
+
+
+            </TextView>
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Total Confirmed case Foreign"
+                android:textSize="18sp"
+                android:id="@+id/totalConfirmCaseForinerTxt"
+                android:layout_below="@+id/totalCaseConfText"
+                android:padding="10dp"
+
+                android:fontFamily="@font/lato_regular"
+
+                tools:ignore="HardcodedText">
+
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/totalCaseConfirmForner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/totalCaseConfirmIndian"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/lato_regular"
+                android:padding="10dp"
+
+                android:text="000000"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText">
+
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Active"
+                android:textSize="18sp"
+                android:visibility="gone"
+                android:id="@+id/activeText"
+                android:layout_below="@+id/totalConfirmCaseForinerTxt"
+                android:padding="10dp"
+
+                android:fontFamily="@font/lato_regular"
+                tools:ignore="HardcodedText">
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="000000"
+                android:textSize="18sp"
+                android:id="@+id/activeCasesInd"
+                android:visibility="gone"
+
+                android:layout_below="@+id/totalCaseConfirmForner"
+                android:padding="10dp"
+
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/lato_regular"
+                tools:ignore="HardcodedText">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Death"
+                android:textSize="18sp"
+                android:id="@+id/dText"
+                android:layout_below="@+id/activeText"
+                android:padding="10dp"
+
+                android:fontFamily="@font/lato_regular"
+                tools:ignore="HardcodedText">
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="000000"
+                android:textSize="18sp"
+                android:id="@+id/totalDethInd"
+                android:layout_below="@+id/activeCasesInd"
+                android:padding="10dp"
+                android:textColor="#CD3434"
+
+
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/lato_regular"
+                tools:ignore="HardcodedText">
+
+            </TextView>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Recovered"
+                android:textSize="18sp"
+                android:id="@+id/recText"
+                android:layout_below="@+id/dText"
+                android:padding="10dp"
+
+                android:fontFamily="@font/lato_regular"
+                tools:ignore="HardcodedText">
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="000000"
+                android:textSize="18sp"
+                android:id="@+id/totalRecoveredInd"
+                android:layout_below="@+id/totalDethInd"
+                android:padding="10dp"
+
+                android:textColor="#4CAF50"
+
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/lato_regular"
+                tools:ignore="HardcodedText">
+
+            </TextView>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Last update"
+                android:textSize="13sp"
+                android:id="@+id/lastUp"
+                android:layout_below="@+id/recText"
+                android:padding="10dp"
+
+                android:fontFamily="@font/lato_regular"
+                tools:ignore="HardcodedText">
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="000000"
+                android:textSize="13sp"
+                android:id="@+id/lastUpdate"
+                android:layout_below="@+id/totalRecoveredInd"
+                android:padding="10dp"
+
+                android:textColor="#4CAF50"
+
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/lato_regular"
+                tools:ignore="HardcodedText">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/ttcViewCard"
+
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            >
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:id="@+id/rel"
+                android:layout_gravity="center"
+                >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Tested Case"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+
+                    android:gravity="center"
+                    android:textColor="#6C6C6C"
+
+                    android:id="@+id/title"
+
+                    android:fontFamily="@font/lato_bold"
+                    tools:ignore="HardcodedText">
+
+                </TextView>
+
+
+                <ProgressBar
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/ttcProgress"
+                    >
+
+                </ProgressBar>
+
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textAlignment="center"
+                android:text="Total sample tested"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:id="@+id/totalSampleText"
+                android:layout_below="@+id/rel"
+
+                android:fontFamily="@font/lato_regular"
+                tools:ignore="HardcodedText">
+            </TextView>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textAlignment="center"
+                android:text="000000"
+                android:textSize="18sp"
+                android:id="@+id/totalSample"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/rel"
+                android:padding="10dp"
+
+                android:fontFamily="@font/lato_regular"
+                tools:ignore="HardcodedText">
+            </TextView>
+
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textAlignment="center"
+                android:text="Total individual tested"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:id="@+id/totalIndiViText"
+                android:layout_below="@+id/totalSampleText"
+
+                android:fontFamily="@font/lato_regular"
+                tools:ignore="HardcodedText">
+            </TextView>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textAlignment="center"
+                android:text="000000"
+                android:textSize="18sp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/totalSample"
+                android:padding="10dp"
+
+                android:id="@+id/totalIndividuals"
+                android:fontFamily="@font/lato_regular"
+                tools:ignore="HardcodedText">
+            </TextView>
+
+
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textAlignment="center"
+                android:text="Total positive"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:id="@+id/totalPositiveText"
+                android:layout_below="@+id/totalIndiViText"
+
+                android:fontFamily="@font/lato_regular"
+                tools:ignore="HardcodedText">
+            </TextView>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textAlignment="center"
+                android:text="000000"
+                android:textSize="18sp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/totalIndividuals"
+                android:padding="10dp"
+
+                android:id="@+id/totalPositive"
+                android:fontFamily="@font/lato_regular"
+                tools:ignore="HardcodedText">
+            </TextView>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Last update"
+                android:textSize="13sp"
+                android:id="@+id/last"
+                android:layout_below="@+id/totalPositiveText"
+                android:padding="10dp"
+
+                android:fontFamily="@font/lato_regular"
+                tools:ignore="HardcodedText">
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="000000"
+                android:textSize="13sp"
+                android:id="@+id/lastUpdt"
+                android:layout_below="@+id/totalPositive"
+                android:padding="10dp"
+
+                android:textColor="#4CAF50"
+
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/lato_regular"
+                tools:ignore="HardcodedText">
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_solid"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="40dp"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:nestedScrollingEnabled="false"
+        android:layout_marginHorizontal="20dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="State Cases"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+
+            android:gravity="center"
+            android:textColor="#379E3B"
+
+
+            android:fontFamily="@font/lato_bold"
+            tools:ignore="HardcodedText">
+
+        </TextView>
+
+
+            <ProgressBar
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="2dp"
+                android:id="@+id/stateProgressBar"
+                >
+
+            </ProgressBar>
+
+
+
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewInd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:clickable="true"
+            android:nestedScrollingEnabled="true"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:focusable="true">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+        </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

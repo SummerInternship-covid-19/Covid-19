@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".fragments.Symptoms">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        android:overScrollMode="always"
+        android:fillViewport="true"
+        >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:elevation="10dp"
+        android:backgroundTint="#FFFFFF"
+        android:background="@drawable/back_solid"
+        android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+
+        app:cardMaxElevation="5dp"
+        android:layout_marginHorizontal="10dp"
+        >
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/YoutubeVideoView"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+
+                app:lottie_fileName="stay_home.json"
+
+                />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+        <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        app:cardMaxElevation="3dp"
+        app:cardBackgroundColor="#F82970"
+        app:cardCornerRadius="10dp"
+        android:layout_marginHorizontal="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:id="@+id/topMsg"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="#ffffff"
+            android:text="The most common symptoms of COVID-19"
+            tools:ignore="HardcodedText">
+
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="true"
+            android:fillViewport="true"
+            >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="true"
+
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+
+
+                android:isScrollContainer="true"
+                android:layout_marginHorizontal="20dp"
+                android:focusable="true"
+                android:clickable="true"
+                app:cardElevation="1dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="20dp"
+>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/dry_cough"
+                        tools:ignore="ContentDescription">
+
+                    </ImageView>
+
+
+                    <TextView
+                        android:id="@+id/dryCough"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/poppins_bold"
+
+                        android:gravity="center"
+                        android:text="@string/drCough"
+                        android:textSize="20sp"
+
+                        >
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentEnd="true"
+
+                            android:id="@+id/btn1"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:fontFamily="@font/lato_black"
+                            android:textColor="#616060"
+                            tools:ignore="ContentDescription,PrivateResource">
+
+                        </ImageButton>
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+
+
+                android:isScrollContainer="true"
+                android:layout_marginHorizontal="20dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_marginTop="-10dp"
+                app:cardElevation="1dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/fever_icon"
+                        tools:ignore="ContentDescription">
+
+                    </ImageView>
+
+
+                    <TextView
+                        android:id="@+id/fever"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="center"
+
+                        android:text="@string/fever_tiredness"
+                        android:textSize="20sp">
+
+                    </TextView>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="right"
+                            android:clickable="true"
+                            android:background="#ffffff"
+                            android:id="@+id/btn2"
+
+                            android:focusable="true"
+                            tools:ignore="ContentDescription,PrivateResource,RtlHardcoded">
+
+                        </ImageButton>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+
+
+                android:isScrollContainer="true"
+                android:layout_marginHorizontal="20dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_marginTop="-10dp"
+
+                app:cardElevation="1dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/paining"
+                        tools:ignore="ContentDescription">
+
+                    </ImageView>
+
+
+                    <TextView
+                        android:id="@+id/achesPain"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="center"
+                        android:text="@string/aches_and_pains"
+
+                        android:textSize="20sp">
+
+                    </TextView>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="right"
+                            android:focusable="true"
+                            android:clickable="true"
+                            android:id="@+id/btn3"
+                            android:background="#ffffff"
+                            android:layout_alignParentEnd="true"
+                            tools:ignore="ContentDescription,RtlHardcoded">
+
+                        </ImageButton>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+
+                android:layout_marginTop="-10dp"
+
+                android:isScrollContainer="true"
+                android:layout_marginHorizontal="20dp"
+                android:focusable="true"
+                android:clickable="true"
+                app:cardElevation="1dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/runny_noice"
+                        tools:ignore="ContentDescription">
+
+                    </ImageView>
+
+
+                    <TextView
+                        android:id="@+id/nose"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="center"
+                        android:text="@string/runny_nose"
+
+                        android:textSize="20sp">
+
+                    </TextView>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="right"
+                            android:focusable="true"
+                            android:clickable="true"
+                            android:id="@+id/btn4"
+                            android:background="#ffffff"
+                            android:layout_alignParentEnd="true"
+                            tools:ignore="ContentDescription,PrivateResource,RtlHardcoded">
+
+                        </ImageButton>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+
+                android:layout_marginTop="-10dp"
+
+                android:isScrollContainer="true"
+                android:layout_marginHorizontal="20dp"
+                android:focusable="true"
+                android:clickable="true"
+                app:cardElevation="1dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/diarrhea"
+                        android:contentDescription="sore"
+                        tools:ignore="HardcodedText">
+
+                    </ImageView>
+
+
+                    <TextView
+                        android:id="@+id/diarrhea"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="center"
+                        android:text="@string/sore_throat_or_diarrhea"
+
+                        android:textSize="18sp">
+
+                    </TextView>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="right"
+                            android:focusable="true"
+                            android:clickable="true"
+                            android:id="@+id/btn5"
+                            android:background="#ffffff"
+                            android:layout_alignParentEnd="true"
+                            tools:ignore="RtlHardcoded">
+
+                        </ImageButton>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
