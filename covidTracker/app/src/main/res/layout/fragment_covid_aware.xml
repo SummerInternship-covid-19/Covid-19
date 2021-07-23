@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:fitsSystemWindows="true"
+
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="-10dp"
+        android:isScrollContainer="true"
+        android:orientation="vertical"
+        >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+
+            app:lottie_fileName="keep_distance.json"
+            app:lottie_autoPlay="true"
+
+            app:lottie_repeatMode="restart"
+            app:lottie_loop="true"
+
+            >
+
+        </com.airbnb.lottie.LottieAnimationView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1.  Keep Social Distance"
+            android:textSize="18sp"
+            android:id="@+id/keepDistance"
+            android:fontFamily="@font/lato_bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+        </TextView>
+
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+
+            android:layout_marginTop="10dp"
+            app:lottie_fileName="wash_hands.json"
+            app:lottie_autoPlay="true"
+
+            app:lottie_repeatMode="restart"
+            app:lottie_loop="true"
+
+            >
+
+        </com.airbnb.lottie.LottieAnimationView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2.  Wash your hands properly"
+            android:textSize="18sp"
+            android:fontFamily="@font/lato_bold"
+            android:layout_gravity="center"
+            android:id="@+id/washHand"
+            android:gravity="center"
+            >
+
+        </TextView>
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+
+            android:layout_marginTop="10dp"
+            app:lottie_fileName="wear_mask.json"
+            app:lottie_autoPlay="true"
+
+            app:lottie_repeatMode="restart"
+            app:lottie_loop="true"
+
+            >
+
+        </com.airbnb.lottie.LottieAnimationView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3.  Wear Mask"
+            android:textSize="18sp"
+            android:id="@+id/wearFacemask"
+            android:fontFamily="@font/lato_bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+        </TextView>
+
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+
+            android:layout_marginTop="10dp"
+            app:lottie_fileName="namaste.json"
+            app:lottie_autoPlay="true"
+
+            app:lottie_repeatMode="restart"
+            app:lottie_loop="true"
+
+            >
+
+        </com.airbnb.lottie.LottieAnimationView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4.  Namaste : No shake hands"
+            android:textSize="18sp"
+            android:id="@+id/noSakeHands"
+            android:fontFamily="@font/lato_bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+        </TextView>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+
+            android:layout_marginTop="10dp"
+            app:lottie_fileName="sick_people.json"
+            app:lottie_autoPlay="true"
+
+            app:lottie_repeatMode="restart"
+            app:lottie_loop="true"
+
+            >
+
+        </com.airbnb.lottie.LottieAnimationView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5.  Avoid contact with \n Sick people"
+            android:textSize="18sp"
+            android:fontFamily="@font/lato_bold"
+            android:id="@+id/avoidSickpeople"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+        </TextView>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+
+            android:elevation="2dp"
+
+            android:layout_marginTop="10dp"
+            android:src="@drawable/avoid_touch"
+
+            >
+
+        </pl.droidsonroids.gif.GifImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5.  Avoid Touching : nose,face,eyes etc/"
+            android:textSize="18sp"
+            android:fontFamily="@font/lato_bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/avoidTouching"
+            >
+
+        </TextView>
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

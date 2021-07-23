@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:fillViewport="true"
+
+    android:orientation="vertical"
+    tools:context=".Covidindia.helplineindiaState.HelplineFrag">
+
+
+    <ProgressBar
+        android:id="@+id/progressHelp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="180dp">
+
+    </ProgressBar>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+
+
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+
+        tools:ignore="MissingConstraints"
+    >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+
+            android:src="@drawable/help_poster"
+
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="295dp"
+            android:contentDescription="helplinePoster"
+            tools:ignore="HardcodedText">
+
+
+        </ImageView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/recyclerViewHelp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:foreground="@android:drawable/list_selector_background"
+
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/cardView"
+        android:nestedScrollingEnabled="true"
+        tools:ignore="UnusedAttribute">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>
